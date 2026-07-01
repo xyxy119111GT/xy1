@@ -9,6 +9,7 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const port = process.env.PORT || 3000;
 const model = "gpt-5.4-mini";
+const indexPath = path.join(__dirname, "index.html");
 
 app.use(express.json({ limit: "1mb" }));
 
@@ -23,6 +24,10 @@ app.use((req, res, next) => {
   }
 
   next();
+});
+
+app.get("/", (req, res) => {
+  res.sendFile(indexPath);
 });
 
 app.use(express.static(__dirname));
