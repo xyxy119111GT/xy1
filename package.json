@@ -1,0 +1,16 @@
+{
+  "name": "ai-copywriter-v1",
+  "version": "1.0.0",
+  "description": "本地运行的 AI 私域文案生成器，使用 Node.js 后端调用 OpenAI API。",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^6.45.0"
+  }
+}

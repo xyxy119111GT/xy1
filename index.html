@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 私域文案生成器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <header class="topbar" aria-label="产品标识">
+        <div class="brand">
+          <div class="logo-mark">AI</div>
+          <div class="logo-text">
+            <strong>AI私域助手</strong>
+            <span>真实 AI 私域内容工作台</span>
+          </div>
+        </div>
+        <div class="topbar-tags">
+          <span>真实 AI 生成版 · 已接入 OpenAI API</span>
+          <span>当前版本：Final Pro 版</span>
+        </div>
+      </header>
+
+      <div class="hero-content">
+        <p class="eyebrow">真实 AI 生成版 · 已接入 OpenAI API</p>
+        <h1>AI 私域文案生成器</h1>
+        <p class="intro">用真实 AI 帮你快速生成朋友圈、短视频、小红书、私聊成交话术和 7 天朋友圈内容计划。</p>
+        <div class="hero-tags" aria-label="产品亮点">
+          <span>适合私域运营</span>
+          <span>支持 7 天内容计划</span>
+          <span>支持自定义行业</span>
+          <span>支持一键复制导出</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="value-grid" aria-label="产品价值">
+      <article class="value-card">
+        <span class="value-index">01</span>
+        <h2>快速生成</h2>
+        <p>输入需求，AI 自动生成多平台文案。</p>
+      </article>
+
+      <article class="value-card">
+        <span class="value-index">02</span>
+        <h2>适合成交</h2>
+        <p>围绕目标客户、卖点和私域场景生成更自然的话术。</p>
+      </article>
+
+      <article class="value-card">
+        <span class="value-index">03</span>
+        <h2>内容计划</h2>
+        <p>一键生成 7 天朋友圈运营节奏，适合长期私域维护。</p>
+      </article>
+    </section>
+
+    <section class="showcase-grid" aria-label="产品展示信息">
+      <article class="info-panel audience-panel">
+        <p class="section-kicker">适合谁用</p>
+        <h2>把 AI 变成你的私域内容助理</h2>
+        <ul class="tag-list">
+          <li>私域销售</li>
+          <li>本地生活商家</li>
+          <li>短视频运营</li>
+          <li>微商/社群运营</li>
+          <li>AI 工具学习者</li>
+          <li>课程知识付费</li>
+          <li>招生引流</li>
+          <li>企业服务</li>
+        </ul>
+      </article>
+
+      <article class="info-panel steps-panel">
+        <p class="section-kicker">使用步骤</p>
+        <h2>4 步完成内容生产</h2>
+        <ol class="step-list">
+          <li><span>步骤 1</span>选择行业和风格</li>
+          <li><span>步骤 2</span>填写需求、客户和卖点</li>
+          <li><span>步骤 3</span>AI 生成文案或 7 天计划</li>
+          <li><span>步骤 4</span>复制、导出并用于朋友圈运营</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="case-section" aria-label="案例展示">
+      <div class="case-copy">
+        <p class="section-kicker">案例展示</p>
+        <h2>加速器/网络工具推广示例</h2>
+        <div class="case-meta">
+          <span>行业：加速器/网络工具</span>
+          <span>目标客户：游戏玩家、需要海外工具的人</span>
+          <span>卖点：稳定、速度快、售后及时</span>
+        </div>
+      </div>
+      <div class="case-card">
+        <p class="case-label">朋友圈文案示例</p>
+        <p>最近很多朋友问我有没有稳定点的网络工具，我自己也试了不少，最后还是觉得稳定和售后最重要。适合经常玩游戏、需要海外工具的朋友，省心比什么都重要。</p>
+      </div>
+    </section>
+
+    <section class="generator" aria-label="AI 操作台">
+      <div class="panel-heading">
+        <p class="section-kicker">AI 操作台</p>
+        <h2>填写信息，让 AI 生成更贴近你的私域内容</h2>
+      </div>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="industrySelect">行业选择</label>
+          <select id="industrySelect">
+            <option>餐饮美食</option>
+            <option>水果生鲜</option>
+            <option>美容美发</option>
+            <option>美甲美睫</option>
+            <option>服装鞋包</option>
+            <option>母婴用品</option>
+            <option>教育培训</option>
+            <option>健身瑜伽</option>
+            <option>房产中介</option>
+            <option>汽车服务</option>
+            <option>本地生活服务</option>
+            <option>家政保洁</option>
+            <option>装修建材</option>
+            <option>摄影写真</option>
+            <option>宠物服务</option>
+            <option>婚庆服务</option>
+            <option>旅游民宿</option>
+            <option>电商卖家</option>
+            <option>直播带货</option>
+            <option>短视频博主</option>
+            <option>自媒体/IP</option>
+            <option>软件工具</option>
+            <option>加速器/网络工具</option>
+            <option>AI 服务</option>
+            <option>AI 教学培训</option>
+            <option>企业服务</option>
+            <option>招生引流</option>
+            <option>招商加盟</option>
+            <option>私域社群</option>
+            <option>课程知识付费</option>
+            <option>其他行业</option>
+            <option>自定义行业</option>
+          </select>
+          <input id="customIndustryInput" class="custom-industry-input" type="text" placeholder="请输入你的行业">
+        </div>
+
+        <div class="field">
+          <label for="styleSelect">文案风格</label>
+          <select id="styleSelect">
+            <option>接地气</option>
+            <option>专业</option>
+            <option>朋友圈真实口吻</option>
+            <option>销售成交型</option>
+            <option>小红书种草型</option>
+            <option>短视频口播型</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="userNeed">你的需求</label>
+        <textarea id="userNeed" rows="4" placeholder="例如：我要卖水果、我要做一家餐馆宣传、我要推广一个加速器"></textarea>
+      </div>
+
+      <div class="form-grid">
+        <div class="field">
+          <label for="targetCustomer">目标客户</label>
+          <input id="targetCustomer" type="text" placeholder="例如：宝妈、本地顾客、企业老板、游戏玩家">
+        </div>
+
+        <div class="field">
+          <label for="productPoints">产品卖点</label>
+          <input id="productPoints" type="text" placeholder="例如：价格便宜、效果好、速度快、售后稳定">
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="generateBtn" class="primary-btn" type="button">生成文案</button>
+        <button id="regenerateBtn" class="primary-btn soft-primary-btn" type="button">重新生成</button>
+        <button id="copyAllBtn" class="secondary-btn" type="button">复制全部文案</button>
+        <button id="exportTxtBtn" class="secondary-btn" type="button">导出 TXT</button>
+        <button id="exampleBtn" class="secondary-btn" type="button">示例填充</button>
+        <button id="clearBtn" class="secondary-btn" type="button">清空内容</button>
+      </div>
+    </section>
+
+    <section class="result-summary" aria-live="polite">
+      <p id="statusMessage" class="status-message"></p>
+      <p id="generationTime" class="generation-time"></p>
+    </section>
+
+    <section class="results" id="results" aria-live="polite">
+      <article class="copy-card">
+        <div class="card-header">
+          <div>
+            <span class="channel-label">朋友圈</span>
+            <h2>微信朋友圈文案</h2>
+          </div>
+          <span class="channel-mark">WX</span>
+        </div>
+        <p id="wechatCopy">输入需求后，生成适合朋友圈发布的自然文案。</p>
+        <button class="copy-btn" type="button" data-copy-target="wechatCopy">一键复制</button>
+      </article>
+
+      <article class="copy-card">
+        <div class="card-header">
+          <div>
+            <span class="channel-label">短视频</span>
+            <h2>抖音短视频文案</h2>
+          </div>
+          <span class="channel-mark">DY</span>
+        </div>
+        <p id="douyinCopy">输入需求后，生成适合短视频口播和标题的文案。</p>
+        <button class="copy-btn" type="button" data-copy-target="douyinCopy">一键复制</button>
+      </article>
+
+      <article class="copy-card">
+        <div class="card-header">
+          <div>
+            <span class="channel-label">种草</span>
+            <h2>小红书种草文案</h2>
+          </div>
+          <span class="channel-mark">RED</span>
+        </div>
+        <p id="xiaohongshuCopy">输入需求后，生成适合分享体验和种草的文案。</p>
+        <button class="copy-btn" type="button" data-copy-target="xiaohongshuCopy">一键复制</button>
+      </article>
+
+      <article class="copy-card">
+        <div class="card-header">
+          <div>
+            <span class="channel-label">成交</span>
+            <h2>私聊客户成交话术</h2>
+          </div>
+          <span class="channel-mark">DM</span>
+        </div>
+        <p id="chatCopy">输入需求后，生成适合私聊客户的成交话术。</p>
+        <button class="copy-btn" type="button" data-copy-target="chatCopy">一键复制</button>
+      </article>
+    </section>
+
+    <section class="weekly-section" aria-label="7 天朋友圈内容计划">
+      <div class="weekly-header">
+        <div>
+          <p class="section-kicker">重点功能</p>
+          <h2>7 天朋友圈内容计划</h2>
+          <p>帮助你从破冰、引导、信任到成交，搭建完整朋友圈运营节奏。</p>
+        </div>
+        <div class="weekly-actions">
+          <button id="generateWeeklyBtn" class="primary-btn" type="button">生成 7 天朋友圈内容</button>
+          <button id="copyWeeklyBtn" class="secondary-btn" type="button">复制 7 天内容</button>
+          <button id="exportWeeklyBtn" class="secondary-btn" type="button">导出 7 天内容 TXT</button>
+        </div>
+      </div>
+
+      <div class="weekly-summary" aria-live="polite">
+        <p id="weeklyStatusMessage" class="status-message"></p>
+      </div>
+
+      <div id="weeklyPlanCards" class="weekly-plan-grid">
+        <p class="weekly-empty">填写上方信息后，点击“生成 7 天朋友圈内容”，这里会展示每天的朋友圈标题、正文、配图建议和发布时间。</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-cta">
+        <p class="section-kicker">Final Pro 版</p>
+        <h2>想定制你的 AI 私域工具？</h2>
+        <p>可以添加微信了解 AI 私域工具、AI 文案生成器、AI 自动化工作流。</p>
+        <a class="wechat-button" href="javascript:void(0)">微信咨询：xyxy99425</a>
+      </div>
+      <p class="footer-note">本工具由 AI 自动生成，仅供文案参考，请根据实际情况修改使用。</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
