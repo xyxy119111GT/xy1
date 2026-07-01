@@ -54,7 +54,6 @@ body::before {
 .generator,
 .weekly-section,
 .info-panel,
-.case-section,
 .value-card,
 .copy-card,
 .footer-cta {
@@ -224,7 +223,6 @@ h1 {
 
 .value-card,
 .info-panel,
-.case-section,
 .generator,
 .copy-card,
 .weekly-section {
@@ -258,7 +256,6 @@ h1 {
 
 .value-card h2,
 .info-panel h2,
-.case-section h2,
 .panel-heading h2,
 .weekly-header h2,
 .footer-cta h2 {
@@ -269,7 +266,6 @@ h1 {
 }
 
 .value-card p,
-.case-card p,
 .weekly-header p,
 .footer-cta p {
   margin: 12px 0 0;
@@ -334,58 +330,11 @@ h1 {
   font-weight: 900;
 }
 
-.case-section {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-  gap: 20px;
-  align-items: stretch;
-  margin-top: 22px;
-  padding: 24px;
-}
-
-.case-copy {
-  display: grid;
-  align-content: center;
-}
-
-.case-meta {
-  display: grid;
-  gap: 10px;
-  margin-top: 18px;
-}
-
-.case-meta span,
 .weekly-meta p {
   border: 1px solid rgba(148, 163, 184, 0.14);
   border-radius: 14px;
   color: #d8e7ff;
   background: rgba(15, 23, 42, 0.58);
-}
-
-.case-meta span {
-  padding: 11px 13px;
-}
-
-.case-card {
-  display: grid;
-  align-content: center;
-  min-height: 210px;
-  padding: 22px;
-  border: 1px solid rgba(56, 189, 248, 0.28);
-  border-radius: 18px;
-  background: linear-gradient(145deg, rgba(56, 189, 248, 0.15), rgba(139, 92, 246, 0.08));
-}
-
-.case-label {
-  margin: 0 0 10px;
-  color: #67e8f9;
-  font-size: 14px;
-  font-weight: 900;
-}
-
-.case-card p:last-child {
-  color: #edf7ff;
-  font-size: 17px;
 }
 
 .generator {
@@ -797,7 +746,6 @@ button:disabled {
 
   .value-grid,
   .showcase-grid,
-  .case-section,
   .form-grid,
   .results,
   .weekly-plan-grid {
@@ -806,7 +754,6 @@ button:disabled {
 
   .value-card,
   .info-panel,
-  .case-section,
   .generator,
   .weekly-section,
   .footer-cta {
